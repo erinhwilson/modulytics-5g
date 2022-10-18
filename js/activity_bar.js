@@ -135,6 +135,22 @@
 
 
     // START ERIN TINKER
+    // const priority = {
+    //      "5G__uMax": 1,
+    //      "5G__MeOH": 2,
+    //      "5G__NoCu": 3,
+    //      "5G__lowCu": 4,
+    //      "5G__medCu": 5,
+    //      "5G__highCu": 6,
+    //      "5G__lowCH4": 7,
+    //      "5G__WithLanthanum": 8,
+    //      "5G__NoLanthanum": 9,
+    //      "5G__highO2_slow_growth": 10,
+    //      "5G__NO3_lowO2_slow_growth": 11,
+    //      "5G__lowO2_fast_growth": 12,
+    //   };
+
+    // Mary's request to sort by growth rate
     const priority = {
          "5G__uMax": 1,
          "5G__MeOH": 2,
@@ -142,12 +158,15 @@
          "5G__lowCu": 4,
          "5G__medCu": 5,
          "5G__highCu": 6,
-         "5G__lowCH4": 7,
-         "5G__WithLanthanum": 8,
-         "5G__NoLanthanum": 9,
-         "5G__highO2_slow_growth": 10,
+         "5G__LanzaTech": 7,
+         "5G__lowCH4": 8,
+         "5G__lowO2_fast_growth": 9,
+         "5G__aa3_KO": 10,
          "5G__NO3_lowO2_slow_growth": 11,
-         "5G__lowO2_fast_growth": 12,
+         "5G__highO2_slow_growth": 12,
+         "5G__WithLanthanum": 13,
+         "5G__NoLanthanum": 14,
+         "5G__crotonic_acid": 15,
       };
 
     data = data.sort((a,b) => priority[a[1]] - priority[b[1]]);
