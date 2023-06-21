@@ -257,17 +257,18 @@
         var columns = [
             {title: "iModulon Name", field: "name", frozen: true, formatter: "textarea", widthGrow: 2},
             {
-                title: "Regulator", field: "regulator_readable", formatter: "textarea",
-                width: 150, sorterParams: {alignEmptyValues: "bottom"}, widthGrow: 2
-            },
-            {title: "Function", field: "function", formatter: "textarea", widthGrow: 3},
-            {
                 title: "Category", field: "category", formatter: "textarea",
                 sorter: function (a, b, aRow, bRow, column, dir, sorterParams) {
                     return aRow.getData().category_num - bRow.getData().category_num;
                 },
-                widthGrow: 2
+                widthGrow: 8
             },
+            // {
+            //     title: "Regulator", field: "regulator_readable", formatter: "textarea",
+            //     width: 150, sorterParams: {alignEmptyValues: "bottom"}, widthGrow: 2
+            // },
+            // {title: "Function", field: "function", formatter: "textarea", widthGrow: 3},
+            
             {title: "N", field: "n_genes", variableHeight: true},
             {
                 title: "Explained Variance", 
@@ -280,20 +281,20 @@
                 },
                 variableHeight: true
             },
-            {
-                title: "Precision",
-                field: "precision",
-                formatter: "money",
-                formatterParams: {precision: 3},
-                variableHeight: true
-            },
-            {
-                title: "Recall",
-                field: "recall",
-                formatter: "money",
-                formatterParams: {precision: 3},
-                variableHeight: true
-            }
+            // {
+            //     title: "Precision",
+            //     field: "precision",
+            //     formatter: "money",
+            //     formatterParams: {precision: 3},
+            //     variableHeight: true
+            // },
+            // {
+            //     title: "Recall",
+            //     field: "recall",
+            //     formatter: "money",
+            //     formatterParams: {precision: 3},
+            //     variableHeight: true
+            // }
         ]
 
         // generate the table
