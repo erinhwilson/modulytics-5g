@@ -1,0 +1,7 @@
+name: modulome_e
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.7.13
+prefix: /home/ewilson6/anaconda3/envs/modulome_e
